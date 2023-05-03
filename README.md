@@ -26,7 +26,7 @@
 # 📖 Math MAgicians <a name="about-project"></a>
 
 
-**Math Magicians** : information about the project comming soon!
+**Math Magicians** : Created the UI desing of the calculator. The functionality of it is comming soon!
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,7 +40,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Page Development** : comming soon.
+- **Page Development** : UI desing of the application.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

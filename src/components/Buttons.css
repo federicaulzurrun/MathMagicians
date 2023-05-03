@@ -1,0 +1,9 @@
+.btns {
+  display: flex;
+  background-color: #e0e0e0;
+  border: 1px solid #b5b5c4;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
