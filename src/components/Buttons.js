@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import './Buttons.css';
 
 function Button(props) {
-  const { label, color } = props;
+  const { label, color, onClick } = props;
 
   return (
-    <button className="btns" type="button" style={{ backgroundColor: color }}>
+    <button className="btns" type="button" style={{ backgroundColor: color }} onClick={onClick}>
       {label}
     </button>
   );
@@ -15,6 +15,7 @@ function Button(props) {
 Button.propTypes = {
   label: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Button;
