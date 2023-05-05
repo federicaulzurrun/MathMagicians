@@ -1,0 +1,6 @@
+.quote-container, .loading-div, .error-div {
+  background-color: #edebeb;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 10%;
+}
