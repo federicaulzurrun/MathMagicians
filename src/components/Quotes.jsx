@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './Quotes.css';
+import style from '../styles/Quotes.module.css';
 
 const Quote = () => {
   const [quotes, setQuote] = useState([]);
-  const [loading, setLoading] = useState([true]);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,12 +18,15 @@ const Quote = () => {
         }
         const data = await response.json();
         setQuote(data[0]);
-        setLoading(false);
       } catch (error) {
-        setError(error.message);
+        <div className={style.errorDiv}>
+          <h4>
+            An error has occurred:
+            {error}
+          </h4>
+        </div>;
       }
     };
-
     fetchData();
   }, [setQuote]);
 
@@ -33,36 +34,15 @@ const Quote = () => {
     color: 'black',
     fontSize: '0.8rem',
   };
-
-  if (loading) {
-    return (
-      <div className="loading-div">
-        <h4 className={quoteStyle}>Generating quote...</h4>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="error-div">
-        <h4 className={quoteStyle}>
-          An error has occurred:
-          {' '}
-          {error}
-        </h4>
-      </div>
-    );
-  }
-
   return (
-    <div className="quote-container">
-      <h2 className="quote">
+    <div className={style.quoteContainer}>
+      <h2 className={style.quote}>
         <br />
         <b className={quoteStyle}>
           {quotes.quote}
         </b>
       </h2>
-      <h3 className="author">
+      <h3 className={style.author}>
         By:
         <b>
           {quotes.author}

@@ -1,11 +1,16 @@
+.title {
+  font-size: 1.5rem;
+  padding-left: 5%;
+}
+
 .calculator {
   background-color: #edebeb;
   display: flex;
   flex-direction: column;
   height: auto;
   font-weight: bold;
-  padding: 0 35%;
-  padding-top: 3%;
+  margin-left: 35%;
+  margin-right: 5%;
 }
 
 .screen {
