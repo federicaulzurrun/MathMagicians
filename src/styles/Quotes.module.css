@@ -1,8 +1,10 @@
-.quote-container,
-.loading-div,
-.error-div {
+.quoteContainer,
+.errorDiv {
   background-color: #edebeb;
   display: flex;
   flex-direction: column;
   padding: 3% 10%;
+  align-items: center;
+  margin: 4%;
+  justify-content: center;
 }
